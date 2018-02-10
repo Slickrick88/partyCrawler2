@@ -1,0 +1,60 @@
+
+#map{
+    height: 700px;
+  width: 80%;
+  border: 4px solid black;
+    border-radius: 7px;
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 50px black;
+  margin: 30px;
+  margin-left:10%;
+  
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: darkgrey;
+  }
+  
+  tr:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+#pendingEvents{ 
+    width: 98%
+}
+.table table-bordered { 
+    width: 98%;
+
+}
+
+#whoWhat { 
+    width: 98%;
+    margin-right: 120px;
+    padding: 0
+}
+
+
+#eventType { 
+    visibility: visible; 
+    transition-delay: 0s; 
+    border: none
+}
+
+
+
+@media only screen and (min-width: 480px){
+   
+}
+
+@media only screen and (min-width: 768px) {
+ 
+} 

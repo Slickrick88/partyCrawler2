@@ -135,7 +135,6 @@ function initMap() {
       console.log("Update function called" + " key is: "+key);
       $("#whoWhat tbody tr").remove();
       reference = database.ref('/' + key);
-      console.log(reference.val().Attire);
       reference.child("Items").once('value', gotData);
       // function that loops through items
       function gotData(snapshot) {

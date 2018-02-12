@@ -176,7 +176,7 @@ function initMap() {
     }
 
     //listens for value updates in the items fields of the party selected
-    database.ref('/' + key).on("child_added", function(childSnapshot, prvChildName) {
+    database.ref('/' + key+"/Items").on("child_added", function(childSnapshot, prvChildName) {
       console.log("child changed");
       var I= childSnapshot.key;
       var person = childSnapshot.val().Who;

@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="assets/Javascript/rob_java.js"></script>
+  <title>Really Sweet App</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Party Crawler</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="Index_bootstrap.html">Events</a>
+          </li>
+          <li>
+            <a href="html/PartyCrawler.html">Create Event</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-lg-12"></div>
+    </div>
+
+    <div class="container">
+      <h2>My Events</h2>
+      <table class="table table-bordered" id="pendingEvents">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name of Event</th>
+            <th>Location</th>
+            <th>Host</th>
+            <th>Time Till Event (days)</th>
+          </tr>
+        </thead>
+
+        <tbody id="events">
+
+        </tbody>
+      </table>
+
+      <div class="container" ID="popUpContainer">
+        <div class="container" ID="additionalPartyData">
+          <!-- this is to dispay data not visible in table above -->
+          <div class=additionalData id="partyType"></div>
+          <div class=additionalData id="partyAttire"></div>
+          <div class=additionalData id="partyKids"></div>
+          <div class=additionalData id="partyDesc"></div>
+        </div>
+        <h2>Whos Bringing What?</h2>
+        <div class="row">
+          <div class="form-group col-sm-4">
+            <label for="who">Your Name</label>
+            <input type="text" class="form-control" id="who">
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="what">What are you bringing?</label>
+            <input type="text" class="form-control" id="what">
+          </div>
+        </div>
+        <button type ="submit" id="itemAdd">Add Item</button>
+        <br>
+        <table class="table table-bordered" id="whoWhat">
+          <thead>
+            <tr>
+              <th>Who</th>
+              <th>What'cha Bringing?</th>
+            </tr>
+          </thead>
+
+          <tbody id="events">
+
+          </tbody>
+        </table>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="map">
+
+  </div>
+
+  </div>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWa5eHnMAMi6rkFWh1pg_Ssxz8lTN6lQk&callback=initMap"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  
+</body>
+
+</html>
